@@ -44,6 +44,26 @@
   if hexo-config('motion.transition.coll_header') { .collection-title { opacity: 0; } }
 }
 
+.post-body {
+  a {
+    color: #428bca;
+    border-bottom-color: transparent;
+    &:hover {
+      border-bottom-color: #428bca;
+    }
+  }
+  blockquote {
+    border-left-color: #428bca;
+  }
+  code {
+    padding: 3px 6px;
+    background-color: rgba(0, 0, 0, .05)
+  }
+  ul li {
+    list-style: unset !important;
+  }
+}
+
 @import "post-expand";
 @import "post-collapse";
 @import "post-type";
